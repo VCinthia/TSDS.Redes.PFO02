@@ -1,0 +1,34 @@
+:root {
+    /* FONTS */
+    --font-textos: "Chakra Petch";
+    --font-tittle: "Orbitron";
+    
+    /* COLORS */
+    --color-nude: #dedee0;
+    --color-darkgray: #1a1a1a;
+    --color-gray: #636161;
+    --color-secondary: #a86dfa;
+    --color-run: #cff700;
+    --opacity-white: 0.8;
+    
+    --image-back: url('https://i.pinimg.com/736x/ea/a3/a9/eaa3a9320bfb35cfcb8d429947b8bb27.jpg');
+    
+    /* FONT SIZES */
+    --font-size-titulo-principal: 70px;
+    --font-size-titulos-secundarios: 20px;
+    --font-size-titulo-line: 30px;
+    --font-size-menu: 16px;
+    --font-size-footer: 14px;
+    
+    /* PADDINGS */
+    --padding-xxs: 6px;
+    --padding-xs: 16px;
+    --padding-s: 30px;
+    
+    /* MARGINGS */
+    --margin-xs: 16px;
+    --margin-s: 30px;
+    
+    /* BORDER RADIUS */
+    --border-content: 20px;
+    }

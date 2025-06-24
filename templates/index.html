@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📌 PFO 2 REDES - VOTA CINTHIA</title>
+    <link rel="stylesheet" href="../static/style.css" />
+    <link rel="stylesheet" href="../static/global.css" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="box-content long">
+        <div>
+            <a href="#" class="list-name">INICIO</a>
+        </div>
+        <ul>
+            <li>
+                <a href="https://github.com/VCinthia/TSDS.Redes.PFO02" target="_blank"><i class="fab fa-github"
+                        aria-hidden="true"></i> Repo GitHub</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="personal">
+        <div>
+            <h1 class="h-tex">
+                CINTHIA ROMINA
+            </h1>
+        </div>
+        <div class="long">
+            <h2>
+                Practica Formativa Obligatoria N° 2
+            </h2>
+        </div>
+    </section>
+    <!-- Bienvenida -->
+    <div class="cards">
+        <section class="box-content card card">
+            <div class="exercise">
+                <h4>
+                    Bienvenido al sistema de tareas
+                </h4>
+                <p>
+                    Iniciar sesion para visualizar las tareas.
+                </p>
+                <p class="code">
+                    Credeciales vinculadas:<br><br>
+                    Usuario: cinthiavota<br>
+                    contraseña: 1234<br>
+                </p>
+                <button id="btn-login" class="play p-p1" onclick="runOne()">
+                    <i class="fa-solid fa-play"></i> Ingresar
+                </button>
+
+                <button id="btn-logout" class="play" onclick="cerrarSesion()" style="display: none;">
+                    <i class="fa-solid fa-door-open"></i> Cerrar sesión
+                </button>
+                <div class="print p1"></div>
+            </div>
+        </section>
+        <!-- Lista de tareas -->
+        <section class="box-content card">
+            <div class="exercise">
+                <h4>
+                    Lista de tareas
+                </h4>
+                <p class="code">
+                    Lista de tareas para el usuario cinthiavota
+                </p>
+                <div class="print p3">
+                    <p class="code"><!-- Tareas --></p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="final-bye">
+            <p> 2025 - CINTHIA ROMINA </p>
+        </div>
+    </footer>
+
+    <!-- JS MAIN -->
+    <script src="../static/main.js"></script>
+</body>
+
+</html>
