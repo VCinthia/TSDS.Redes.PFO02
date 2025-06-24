@@ -1,10 +1,10 @@
-from flask import Flask, request, jsonify, render_template, send_from_directory, session
+import os
+from flask import Flask, render_template, request, session, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
-import os
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///tareas.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(app.instance_path, 'tareas.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = "clave-super-secreta"  # Podés usar os.urandom(24) en producción
 

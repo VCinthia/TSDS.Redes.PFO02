@@ -87,7 +87,7 @@ http://URL local donde la aplicación está corriendo/
 ### Usuario de prueba
 
 ```json
-Usuario: cinthiavota
+Usuario: nombreusuario
 Contraseña: 1234
 ```
 

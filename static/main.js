@@ -1,5 +1,5 @@
 async function runOne() {
-  const usuario = "cinthiavota";
+  const usuario = "nombreusuario";
   const contraseña = "1234";
 
   const loginResponse = await fetch("/login", {
