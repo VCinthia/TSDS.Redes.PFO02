@@ -1,0 +1,86 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "PFO 02",
+    "collectionId": "8b2356cf-ef83-4c7b-8cc9-1dbf6d865beb",
+    "dateExported": "2025-06-24T22:23:57.408Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f415f68a-78c6-421d-b0a0-6bfbf935aaa0",
+            "colId": "8b2356cf-ef83-4c7b-8cc9-1dbf6d865beb",
+            "containerId": "",
+            "name": "Registrar Usuario",
+            "url": "http://127.0.0.1:5000/registro",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-06-24T01:00:29.661Z",
+            "modified": "2025-06-24T21:42:49.754Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"usuario\": \"nombreusuario\",\n  \"contraseña\": \"1234\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c0d06f9f-5ae9-4b13-8311-01af239c98be",
+            "colId": "8b2356cf-ef83-4c7b-8cc9-1dbf6d865beb",
+            "containerId": "",
+            "name": "Iniciar Sesion",
+            "url": "http://127.0.0.1:5000/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-06-24T01:02:47.294Z",
+            "modified": "2025-06-24T21:42:52.977Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"usuario\": \"nombreusuario\",\n  \"contraseña\": \"1234\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ada7c707-25aa-4cd7-b295-b6029a89d1c0",
+            "colId": "8b2356cf-ef83-4c7b-8cc9-1dbf6d865beb",
+            "containerId": "",
+            "name": "Listar Tareas",
+            "url": "http://127.0.0.1:5000/tareas",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-06-24T01:03:34.723Z",
+            "modified": "2025-06-24T01:03:34.723Z",
+            "headers": []
+        },
+        {
+            "_id": "7f73bd82-aa0d-47ca-a729-a7f3f04beb22",
+            "colId": "8b2356cf-ef83-4c7b-8cc9-1dbf6d865beb",
+            "containerId": "",
+            "name": "Crear Tarea",
+            "url": "http://127.0.0.1:5000/tareas",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2025-06-24T01:48:12.944Z",
+            "modified": "2025-06-24T21:43:50.083Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\": \"Parcial\",\n  \"descripcion\": \"Pendiente\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "5620da84-3ce0-40ba-8acc-78d53ee6008f",
+            "colId": "8b2356cf-ef83-4c7b-8cc9-1dbf6d865beb",
+            "containerId": "",
+            "name": "Cerrar Sesion",
+            "url": "http://127.0.0.1:5000/logout",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2025-06-24T01:50:30.958Z",
+            "modified": "2025-06-24T01:51:58.568Z",
+            "headers": []
+        }
+    ],
+    "ref": "97tmUr5IaMwLQapHpkhAF-wZ33ze9TyRXIC9BNqjfJLZRtPt84aoPeqyVHm2IfaTjkHPFMkYSNepCjWs4kVMnA"
+}

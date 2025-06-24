@@ -6,7 +6,7 @@ from flask_bcrypt import Bcrypt
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(app.instance_path, 'tareas.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.secret_key = "clave-super-secreta"  # Podés usar os.urandom(24) en producción
+app.secret_key = "clave-super-secreta"
 
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)

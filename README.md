@@ -18,6 +18,46 @@ Se implementa una **API REST con Flask** que permite:
 
 ---
 
+## Enlace al repositorio
+
+[GitHub Repo](https://github.com/VCinthia/TSDS.Redes.PFO02)
+
+---
+
+## Endpoints de la API
+
+Las rutas disponibles para consumir la API son:
+
+| Método | Ruta                | Descripción                  |
+|--------|---------------------|------------------------------|
+| POST   | `/registro`         | Registrar usuario            |
+| POST   | `/login`            | Iniciar sesión               |
+| GET    | `/tareas`           | Listar tareas del usuario    |
+| POST   | `/tareas`           | Crear nueva tarea            |
+| POST   | `/logout`           | Cerrar sesión                |
+
+> Las rutas requieren sesión activa, excepto `/registro` y `/login`.
+
+Ejemplo de cuerpo para registro/login:
+
+```json
+{
+  "usuario": "nombreusuario",
+  "contraseña": "1234"
+}
+```
+
+Ejemplo para crear tarea:
+
+```json
+{
+  "titulo": "Examen",
+  "descripcion": "Pendiente"
+}
+```
+
+---
+
 ## Tecnologías utilizadas
 
 - Python 3.13
@@ -33,48 +73,57 @@ Se implementa una **API REST con Flask** que permite:
 
 ```
 PFO 02 - REDES/
-├── servidor.py
-├── templates/
-│   └── index.html
-├── static/
-│   ├── style.css
-│   ├── global.css
-│   └── main.js
-├── tareas.db (se genera automáticamente)
-└── venv/
+  ├── instance/
+  │ └── tareas.db # Base de datos SQLite (persistencia local)
+  │
+  ├── screenshot/
+  │ └── consola/ # Capturas desde consola (inicio, cierre, creación, etc.)
+  │ └── web/ # Capturas desde la interfaz web
+  │
+  ├── static/
+  │ ├── global.css # Estilos globales
+  │ ├── style.css # Estilos para la interfaz principal
+  │ └── main.js # Funciones JavaScript que interactúan con la API
+  │
+  ├── templates/
+  │ └── index.html # Interfaz HTML principal del sistema
+  │
+  ├── thunder-client/
+  │ ├── thunder-collection_PFO 02.json # Colección de pruebas Thunder Client
+  │ └── thunder-collection_postman_PFO 02.json # EColección de pruebas Postman
+  │
+  ├── venv/ # Entorno virtual de Python
+  │
+  ├── servidor.py # Código principal de la app Flask (define rutas y lógica)
+  ├── requirements.txt # Dependencias del proyecto para pip
+  ├── render.yaml # Configuración para despliegue en Render
+  └── README.md # Documentación del proyecto
 ```
 
 ---
 
-## Instrucciones para ejecutar el proyecto
+## Ejecución local
 
-### 1. Crear entorno virtual
+1. Crear y activar entorno virtual
 
 ```bash
 python -m venv venv
-```
-
-### 2. Activar entorno virtual
-
-- En Windows:
-
-```bash
 .\venv\Scripts\activate
 ```
 
-### 3. Instalar dependencias
+2. Instalar dependencias
 
 ```bash
-pip install flask flask_sqlalchemy flask_bcrypt
+pip install -r requirements.txt
 ```
 
-### 4. Ejecutar la aplicación
+3. Ejecutar aplicación local
 
 ```bash
 python servidor.py
 ```
 
-Abrir en el navegador:
+4. Abrir en el navegador:
 
 ```
 http://URL local donde la aplicación está corriendo/
@@ -82,18 +131,22 @@ http://URL local donde la aplicación está corriendo/
 
 ---
 
-## Pruebas
+## Versión en línea
 
-### Usuario de prueba
+- **Deploy Render:** [tsds-redes-pfo02.onrender.com](https://tsds-redes-pfo02.onrender.com/)
+- La base de datos se incluye en la carpeta `instance/` y fue cargada al deploy.
 
-```json
-Usuario: nombreusuario
-Contraseña: 1234
-```
+---
 
-### Capturas de pantalla
+## Capturas
 
-- Las capturas se incluyen en la carpeta `/capturas/`.
+Las imágenes de prueba están en la carpeta `/screenshot/`.
+
+---
+
+## Thunder Client Collections
+
+Las colecciones tanto para Thunder Client como Postman se encuentran en la carpeta `/thunder-client/`.
 
 ---
 
@@ -112,12 +165,6 @@ Hashear contraseñas protege los datos del usuario ante filtraciones o accesos n
 
 ---
 
-## Enlace al repositorio
-
-[TSDS.Redes.PFO02](https://github.com/VCinthia/TSDS.Redes.PFO02)
-
----
-
 **Materia:** Redes  
 **Carrera:** Tecnicatura Superior en Desarrollo de Software  
-**Docente:** [Alan Portillo]  
+**Docente:** Alan Portillo
